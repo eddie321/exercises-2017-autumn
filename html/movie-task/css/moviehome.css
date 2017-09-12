@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', 'Phosphate Inline', 'Copperplate Gothic Bold', 'Lucinda Grande', Verdana, serif;
+}
+
+html {
+    background-image: url(images/film.png);
+    /* background color before opacity-
+    background-color: #DAD8FF; */
+    background-color: #FAF9F7;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media only screen and (min-width: 600px) {
+    #hero {
+        max-height: 450px;
+        width: 100%;
+    }
+}
+
+/* headline and hero image */
+h1 {
+    display: inline;
+    position: absolute;
+    text-align: center;
+    Font-size: 6rem;
+    color: black;
+    border: 5px solid rgba(199,198,197,0.1);
+    background-color: rgba(199,198,197,0.5)
+}
+
+@media only screen and (max-width: 725px) {
+    h1 {
+        font-size: 9vw;
+        display: inline-block;
+    }
+
+    h2 {
+        font-size: 5vw;
+    }
+
+    h3 {
+        font-size: 3vw;
+    }
+}
+
+#hero {
+    max-width: 100%;
+    max-height: auto;
+}
+
+/* header navigation */
+ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+        float: right;
+}
+
+li a {
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;
+}
+
+a:hover {
+    color: #FF0000;
+}
+
+/* Recent news */
+
+h2 {
+    font-size: 4rem;
+}
+
+p {
+    line-height: 1.6rem;
+    background-color: rgba(253, 252, 251, 0.5);
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+#pony {
+    display: flex;
+    flex-wrap: left;
+    padding: 10px;
+}
+
+#pony p {
+    margin-left: 10px;
+    text-align: justify;
+}
+
+#ponyimg {
+    max-width: 50%;
+    max-height: 250px;
+}
+
+#tyson {
+    display: flex;
+    flex-wrap: right;
+    padding: 10px;
+}
+
+#tyson p {
+    margin-right: 10px;
+    text-align: justify;
+}
+
+#tysonimg {
+    max-width: 50%;
+    max-height: 250px;
+}
+
+@media only screen and (max-width: 800px) {
+    #tysonimg, #ponyimg {
+        max-width: 40%;
+        max-height: 12rem;
+        padding-top: 5%;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    #tysonimg, #ponyimg {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;        
+    }
+}
+
+/* hottest movie and actor */
+#rogueone_img, #felicity_img {
+    max-width: 40%; 
+    max-height: 80%;
+    min-height: 70%; 
+}
+
+.this_week {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#hottest_actor, #hottest_movie {
+    width: 50%;
+}
+
+.footer ul {
+    display: flex;
+    list-style-type: none;
+    margin-top: 10px;
+    padding: 0;
+    justify-content: flex-end;
+}

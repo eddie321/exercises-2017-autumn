@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', 'Phosphate Inline', 'Copperplate Gothic Bold', 'Lucinda Grande', Verdana, serif;
+}
+
+html {
+    background-image: url(images/film.png);
+    /* background color before opacity-
+    background-color: #DAD8FF; */
+    background-color: #FAF9F7;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media only screen and (min-width: 600px) {
+    #hero {
+        max-height: 450px;
+        width: 100%;
+    }
+}
+
+/* headline and hero image */
+h1 {
+    display: inline;
+    position: absolute;
+    text-align: center;
+    Font-size: 6rem;
+    color: black;
+    border: 5px solid rgba(199,198,197,0.1);
+    background-color: rgba(199,198,197,0.5)
+}
+
+@media only screen and (max-width: 725px) {
+    h1 {
+        font-size: 9vw;
+        display: inline-block;
+    }
+
+    h2 {
+        font-size: 5vw;
+    }
+
+    h3 {
+        font-size: 3vw;
+    }
+}
+
+#hero {
+    max-width: 100%;
+    max-height: auto;
+}
+
+/* header navigation */
+ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+        float: right;
+}
+
+.nav li a, .footer li a {
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;
+}
+
+a:hover {
+    color: #FF0000;
+}
+
+/* biography */
+
+h2 {
+    font-size: 4rem;
+}
+
+p {
+    line-height: 1.6rem;
+    background-color: rgba(253, 252, 251, 0.5);
+}
+
+.biography p {
+    text-align: justify;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+/* felicity jones - image */
+#felicity {
+    max-width: 250px; 
+    max-height: 330px;
+    float: right;
+    padding-left: 10px;
+    display: inline;
+    margin-top: -60px;
+}
+
+@media only screen and (max-width: 800px) {
+    #felicity {
+        max-width: 30vw;
+        margin-top: 5px;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    #felicity {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;        
+    }
+}
+
+#filmography li {
+    display: block;
+    background-color: #dddddd;
+    max-width: 350px;
+    line-height: 1.5rem;
+}
+
+#filmography h2 {
+    font-size: 4rem;
+}
+
+/* footer */
+.footer ul {
+    display: flex;
+    list-style-type: none;
+    margin-top: 10px;
+    padding: 0;
+    justify-content: flex-end;
+}

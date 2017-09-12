@@ -1,0 +1,83 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+h1, h2, h3 {
+    font-family: Impact;
+}
+
+h1 {
+    display: inline;
+    color: #790000;
+    background-color: rgba(22, 22, 22, 0.45);
+    font-size: 2.3rem;
+    font-weight: normal;
+}
+
+img {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+}
+
+a {
+    display: inline-block;
+    font-weight: bold;
+    color: #EE0003;
+    text-decoration: none;
+    
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#biography {
+    line-height: 1.5rem;
+}
+
+p.red { 
+    background-color: red;
+}
+
+p.green {
+    background-color: green;
+}
+
+p.blue {
+    background-color: blue;
+}
+
+p.blue a {
+    color: yellow;
+}
+
+p.green a, p.red a {
+    color: white;
+}
+
+h2 {
+    font-variant: small-caps;
+    font-size: 1.5em;
+}
+
+li.seen {
+    color: silver;
+}
+
+li.unseen {
+    color: darkred
+}
+
+.seen.good {
+    color: green;
+}
+
+div#biography a {
+    text-decoration: none;
+}
+
+/* hyperlink hover underline */
+div#biography a:hover {
+    text-decoration: underline;
+}
